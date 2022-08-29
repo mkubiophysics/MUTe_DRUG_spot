@@ -35,7 +35,7 @@ D2E, "Drug 2"
 F3G, "Drug 3"
 ```
 
-Make sure that the drug names are enclosed inside double quotes ("). Mute_Drug_spot supports visualization of different types of mutations, includins mis-sense mutations, non-sense mutations, and frameshift mutations. These are displayed via different symbols on the plot, corresponding to:
+Make sure that the drug names are enclosed inside double quotes ("). Mute_Drug_spot supports visualization of different types of mutations, including mis-sense mutations, non-sense mutations, and frameshift mutations. These are displayed via different symbols on the plot, corresponding to:
 
 |Mutation Type      | Shape   | Example |
 |-------------------|---------|---------|
@@ -48,13 +48,13 @@ The syntax for writing the different kinds of mutations is also available in the
 
 Once you have this list of mutations ready, the main steps for the usage of Mute_Drug_spot are:
  - On the top left corner of the app, type the UniProt ID of your protein of interest and press Enter. Mute_Drug_spot uses the UniProt API to fetch information about the protein, including its name, length, and domain information.
- - If your protein of interest does not have a UniProt ID, or if Mute_Drug_spot gives missing/incorrect information, you can manually edit all these parameters in the input fields below. For example, the length of the sequence and number of domains can be modified just below the UniProt ID input field (note that Mute_Drug_spot will always display at least one domain; if your protein does not have any domains, set the length of this domain equal to the total length of the protein).
+ - If your protein of interest does not have a UniProt ID, or you wish to modify the fetched information, you can manually edit all these parameters in the input fields below. For example, the length of the sequence and number of domains can be modified just below the UniProt ID input field (note that Mute_Drug_spot will always display at least one domain; if your protein does not have any domains, set the length of this domain equal to the total length of the protein).
  - Upload the list of mutations in the input box provided, and set the file delimiter from the dropdown box below (Mute_Drug_spot supports both CSV and TSV file formats, but CSV files are preferred).
  - Ensure that the plot displayed on the center of the screen is updated and all the parameters are displayed correctly. If the mutations or domains are displayed incorrectly, check the list of mutations and the domain information input fields to make sure there are no errors.
  - In order to change the color selected for each drug, go to the Customize Colors panel below the plot and set the colors manually.
  - The labels of the x- and y-axes can be changed through their corresponding input fields in the Customize Labels panel below the plot. The Title field is automatically set to the name of the protein determined by Mute_Drug_spot if you provide a UniProt ID for the protein. Any of these fields can be set to empty values in order to remove the corresponding label(s) from the plot.
  - If the title of the plot is displayed too far from, or too close to, the plot, you can change its display height using the Title Position slider.
- - The Shrink Plot checkbox reduces the height of the mutation spots in the plot. This can be useful if your list of mutations has a large number of unique drug names, in which case the legend on top of the plot will take a large amount of space and potentially overlap with the plot title.
+ - The Shrink Plot checkbox reduces the height of the mutation spots in the plot. This can be useful if your list of mutations has a large number of unique drug names, in which case the legend above the plot will take a large amount of space and potentially overlap with the plot title.
  - Once all the parameters have been set to the desired values, click on Download Plot in order to save the generated plot as a PDF file.
  
 ## FAQs
@@ -62,7 +62,7 @@ Once you have this list of mutations ready, the main steps for the usage of Mute
  - _Warning about number of drugs_: If there are more than 12 unique drug names in your list of mutations, Mute_Drug_spot will display a warning message. This is because `RColorBrewer`, the package used by Mute_Drug_spot to color the mutation spots, only supports a maximum of 12 colors for color palette generation. Although Mute_Drug_spot can automatically interpolate in-between this color palette to create a larger palette, the resulting colors may not be easily distinguishable from each other. In such a case, you can manually set the colors for each drug, as mentioned in the Usage section.
  - _There are files with random names in the Mute_Drug_spot folder_: Mute_Drug_spot saves a temporary version of your plot every time you make an update to any parameter value. This not just ensures that any previous version of the plot is available for recovery, but is in fact necessary for Mute_Drug_spot to be able to save the plots at all (due to the way R handles file downloads). In an ideal case, Mute_Drug_spot automatically deletes any temporary files older than 24 hours (note that Mute_Drug_spot needs to be running in order for this housekeeping to work), but if you wish to remove these files manually, you can safely remove any PDF files in the folder.
  
- ## Issues/Feedback
+ ## Issues / Feedback
  If you have any other query, issue, or feedback regarding Mute_Drug_spot, feel free to open a new Issue on this Github repository. But make sure to first read through the code documentation in order to see if your query has already been documented here.
  
  ## Cite:
