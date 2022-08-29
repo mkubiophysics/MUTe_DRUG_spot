@@ -27,7 +27,7 @@ for (pack in packages) {
 
 # trackViewer needs to be installed via Bioconductor
 if (!"trackViewer" %in% rownames(installed.packages())) {
-  install.packages("trackViewer")
+  BiocManager::install("trackViewer")
 }
 library(trackViewer)
 
