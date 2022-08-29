@@ -1,7 +1,7 @@
 # Mute_DRUG_spot
 A freely available tool for plotting mutations of a protein along with the corresponding drug against which they are known to confer resistance. Hence, goes the name Mute_Drug_spot. 
 
-![Capture_app.png](https://github.com/mkubiophysics/Mute_Drug_spot/blob/main/Capture_app.png)
+![Capture_app.png](Capture_app.png)
 
 ## Installation
 You only need to have an installation of RStudio in order to run this application (but it is recommended that the dependencies are already present on your system; see the next section). All it takes to launch Mute_Drug_spot is 2 steps, which are as follows:
