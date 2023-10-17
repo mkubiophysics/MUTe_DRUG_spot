@@ -6,10 +6,7 @@ EASISEST WAY TO USE "MUTe_DRUG_spot"</br>
  (i) Download and Install  R Studio (https://posit.co/download/rstudio-desktop/)<br/>
   (ii) Install and load SHINY Application Server using 2 simple commands<br/>               
  ``` install.packages(“shiny”)``` <br/>
-   ```  library (shiny)<br/> ``` <br/>
+   ```  library (shiny) ``` <br/>
 (iii)To run and use our application use the following command <br/>
 ```runGitHub("MUTe_DRUG_spot", "mkubiophysics") ``` <br/>
-
-
-
 
