@@ -10,3 +10,6 @@ EASISEST WAY TO USE "MUTe_DRUG_spot"</br>
 (iii)To run and use our application use the following command <br/>
 ```runGitHub("MUTe_DRUG_spot", "mkubiophysics") ``` <br/>
 
+## Contributors 
+Aakriti Jain(aakriti30@south.du.ac.in)
+Aayush Srivastava
